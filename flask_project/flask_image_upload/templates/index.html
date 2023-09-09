@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Upload</title>
+    <style>
+        body {
+            background-image: linear-gradient(to bottom, #FFD700, #FF8C00); /* Set the gradient background */
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        h1 {
+            color: #fff;
+        }
+
+        form {
+            margin-top: 50px;
+        }
+
+        input[type="file"] {
+            padding: 10px;
+        }
+
+        input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #FF4500;
+            border: none;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #FF6347;
+        }
+    </style>
+</head>
+<body>
+    <h1>Upload an Image</h1>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="image">
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
